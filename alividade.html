@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Formulário</h2>
+    <form>
+   
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label>Gênero</label>
+      <div class="options">
+        <input type="radio" id="masc" name="genero" value="masculino">
+        <label for="masc">Masculino</label><br>
+        <input type="radio" id="fem" name="genero" value="feminino">
+        <label for="fem">Feminino</label>
+      </div>
+
+      <label>Interesses</label>
+      <div class="options">
+        <input type="checkbox" id="esportes" name="interesses" value="esportes">
+        <label for="esportes">Esportes</label>
+        <input type="checkbox" id="musica" name="interesses" value="musica">
+        <label for="musica">Música</label><br>
+        <input type="checkbox" id="viagem" name="interesses" value="viagem">
+        <label for="viagem">Viagem</label>
+      </div>
+
+      <label for="pais">País</label>
+      <select id="pais" name="pais">
+        <option value="brasil">Brasil</option>
+        <option value="portugal">Portugal</option>
+        <option value="eua">EUA</option>
+        <option value="outro">Outro</option>
+      </select>
+
+   
+      <br><br>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
